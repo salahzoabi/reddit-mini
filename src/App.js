@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/App.css';
+import { Route, Routes } from 'react-router-dom';
+import Feed from './pages/Feed/Feed';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import Comments from './pages/Comments/Comments';
+import Navbar from './components/Navbar/Navbar';
+import { useState } from 'react';
 
 function App() {
+  const queryClient = new QueryClient();
+
+  const [subreddit, setSubreddit] = useState('r/all');
+  const subreddits = ['r/all', 'r/funny', 'r/AskReddit', 'r/gaming', 'r/aww', 'r/Music', 'r/pics', 'r/science', 'r/worldnews', 'r/Art']
+
+  const [searchTerm, setSearchTerm] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <QueryClientProvider client={queryClient}>
+        <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} subreddit={subreddit} setSubreddit={setSubreddit} subreddits={subreddits} />
+        <Routes>
+          <Route path='/' element={<Feed searchTerm={searchTerm} setSearchTerm={setSearchTerm} subreddit={subreddit} setSubreddit={setSubreddit} />} />
+          <Route path='/comments/:permalink' element={<Comments></Comments>} />
+        </Routes>
+      </QueryClientProvider>
+    </>
   );
 }
 

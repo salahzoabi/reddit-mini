@@ -1,0 +1,27 @@
+.comment {
+    padding-bottom: 1em;
+    padding-inline: 1em;
+
+    border: thin solid var(--border-clr-100);
+    background-color: var(--main-clr-200);
+}
+
+.comment:focus, .comment:hover {
+    border: thin solid var(--border-clr-300);
+    z-index: 1;
+}
+
+.comment .author {
+    color: var(--text-clr-weak);
+}
+
+.comment .body {
+    margin: 0;
+}
+
+@media only screen and (width > 800px){
+    .comments-container {
+        max-width: 820px;
+        margin-inline: auto;
+    }
+}

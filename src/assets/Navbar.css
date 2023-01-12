@@ -1,0 +1,41 @@
+.navbar {
+    min-height: max(3.5rem, 5vh);
+    position: sticky;
+    top: 0;
+    background-color: var(--main-clr-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 820px);
+    gap: 20px;
+    padding: 0 2rem;
+}
+
+.back-btn {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--main-clr-200);
+    border-radius: .5em;
+}
+
+select, .select {
+    max-width: 10ch;
+    font-size: 1rem;
+}
+
+.filter-posts {
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    line-height: 1.1;
+    background: var(--main-clr-200);
+    position: relative;
+    color: var(--text-clr-strong);
+    flex: 1;
+}

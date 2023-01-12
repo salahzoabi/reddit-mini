@@ -1,0 +1,36 @@
+:root {
+  --main-clr-100: #030303;
+  --main-clr-200: #1A1A1B;
+
+  --text-clr-weak: #82959b;
+  --text-clr-strong: #f2f4f5;
+
+  --border-clr-100: #343536;
+  --border-clr-200: #818384;
+  --border-clr-300: #b0b1b4;
+
+  --select-border: #777;
+  --select-focus: #b6b6b9;
+  --select-arrow: var(--select-border);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--main-clr-100);
+  color: var(--text-clr-strong);
+}
+
+a {
+  color: var(--text-clr-strong);
+}
+
+a:visited,
+a:active {
+	color: var(--text-clr-weak);
+}

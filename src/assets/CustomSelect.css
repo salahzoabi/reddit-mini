@@ -1,0 +1,32 @@
+select {
+    appearance: none;
+    border: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    color: inherit;
+    background: var(--main-clr-200);
+    padding-right: 2em;
+}
+
+.select {
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    line-height: 1.1;
+    background: var(--main-clr-200);
+    position: relative;
+}
+
+.custom-select-dropdown-arrow{
+    --arrow-width: 1em;
+    position: absolute;
+    right: .5em;
+    pointer-events: none;
+    width: var(--arrow-width);
+    top: calc(50% - 0.5 * var(--arrow-width));
+}
