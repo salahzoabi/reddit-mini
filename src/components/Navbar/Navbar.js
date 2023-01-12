@@ -1,8 +1,7 @@
-import { faArrowDown, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-import { v4 } from 'uuid'
 import '../../assets/Navbar.css'
 import CustomSelect from '../CustomSelect/CustomSelect'
 

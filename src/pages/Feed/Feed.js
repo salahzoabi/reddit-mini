@@ -1,5 +1,5 @@
-import axios, { Axios } from 'axios'
-import React, { useState } from 'react'
+import axios from 'axios'
+import React from 'react'
 import { useQuery } from 'react-query'
 import PostPreview from '../../components/PostPreview/PostPreview'
 import { v4 } from 'uuid'
