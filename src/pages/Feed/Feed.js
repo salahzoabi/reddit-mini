@@ -2,7 +2,6 @@ import axios, { Axios } from 'axios'
 import React, { useState } from 'react'
 import { useQuery } from 'react-query'
 import PostPreview from '../../components/PostPreview/PostPreview'
-import '../../assets/Feed.css'
 import { v4 } from 'uuid'
 
 export default function Feed({ subreddit, setSubreddit, searchTerm, setSearchTerm }) {

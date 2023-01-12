@@ -1,4 +1,3 @@
-import './assets/App.css';
 import { Route, Routes } from 'react-router-dom';
 import Feed from './pages/Feed/Feed';
 import { QueryClient, QueryClientProvider } from 'react-query'
