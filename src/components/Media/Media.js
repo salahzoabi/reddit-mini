@@ -59,38 +59,7 @@ export default function Media({ post }) {
     return <div></div>
 }
 
-const openFullscreen = e => {
-    if (e.requestFullscreen) {
-        e.requestFullscreen();
-    } else if (e.mozRequestFullScreen) {
-        e.mozRequestFullScreen();
-    } else if (e.msRequestFullscreen) {
-        e.msRequestFullscreen();
-    }
-}
-
-const closeFullscreen = () => {
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
-}
-
-const fs_status = () => {
-    if (document.fullscreenElement ||
-        document.msFullscreenElement ||
-        document.mozFullScreenElement) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
 const handleClick = (e) => {
-    fs_status() ? closeFullscreen(e.target) : openFullscreen(e.target)
+    e.target.parentElement.classList.toggle('fullscreen')
 }
 

@@ -15,6 +15,18 @@
     max-height: 50vh;
 }
 
+.media.fullscreen {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.media.fullscreen > * {
+	max-height: 100%;
+}
+
 .post-container .upvotes {
 	color: var(--text-clr-weak);
 }
