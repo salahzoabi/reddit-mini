@@ -17,6 +17,7 @@
 
 .comment .body {
     margin: 0;
+    word-wrap: break-word;
 }
 
 @media only screen and (width > 800px){

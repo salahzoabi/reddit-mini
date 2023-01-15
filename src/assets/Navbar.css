@@ -2,10 +2,11 @@
     min-height: max(3.5rem, 5vh);
     position: sticky;
     top: 0;
-    background-color: var(--main-clr-100);
+    background-color: var(--main-clr-200);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid var(--border-clr-100);
 }
 
 .navbar-content {
@@ -13,14 +14,12 @@
     justify-content: space-between;
     width: min(100%, 820px);
     gap: 20px;
-    padding: 0 2rem;
+    padding: 0 5px;
 }
 
 .back-btn {
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--main-clr-200);
-    border-radius: .5em;
 }
 
 select, .select {
@@ -30,7 +29,7 @@ select, .select {
 
 .filter-posts {
     border: 1px solid var(--select-border);
-    border-radius: 0.25em;
+    border-radius: 100em;
     padding: 0.25em 0.5em;
     cursor: pointer;
     line-height: 1.1;
