@@ -13,7 +13,7 @@ export default function PostPreview({ title, author, data }) {
         window.innerWidth > 800 ? <Media post={data}></Media> :
         
         data.thumbnail && data.thumbnail !== 'default' &&
-        <img src={data.thumbnail}/>
+        <img src={data.thumbnail} alt="" />
       }
       <p className='title'>{title}</p>
     </Link>

@@ -1,70 +1,57 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Reddit-Mini](./public/images/preview-1.png)](https://github.com/salahzoabi/reddit-mini)
 
-## Available Scripts
+# Simple Reddit CLient
 
-In the project directory, you can run:
+This is the repo for [Reddit mini](https://github.com/salahzoabi/reddit-mini).
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   [Table of contents](#table-of-contents)
+-   [Introduction](#introduction)
+-   [Codebase](#codebase)
+    -   [Technologies](#technologies)
+    -   [Folder structure](#folder-structure)
+-   [Setup Process](#setup-process)
+-   [Acknowledgments](#acknowledgments)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Introduction
 
-### `npm test`
+Reddit Mini is a basic Reddit client that enables the viewing of Reddit posts and comments. It's built as a single-page responsive application using React and React Query, and it retrieves data from Reddit through the JSON API. It's been optimized for both mobile and desktop devices. I'm currently working on this project to learn React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is an ongoing project and I plan to add more functionalities and enhance it in the future.
 
-### `npm run build`
+# Codebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Javascript** & **CSS**
+-   **React**: Front-end library
+-   **React Query**: Data synchronization library
+-   **React Router**: Routing library
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder structure
 
-### `npm run eject`
+```sh
+reddit-mini/
+├── public     # Public files used on the frontend
+└── src        # Frontend SPA
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+reddit-mini/src
+├──  assets        # Styling, icons and images
+├── components     # Reusabble parts
+└── pages          # Main pages
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Setup Process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Clone or download the repo
+- Open the directory and run `npm install` to install
+- Run development application by using `npm start`
 
-## Learn More
+## Acknowledgments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The project utilizes the [Reddit JSON Api](https://github.com/reddit-archive/reddit/wiki/JSON) to obtain data from [Reddit](https://www.reddit.com/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project was assigned as part of [Codecademy](https://www.codecademy.com)'s front-end engineering course curriculum, with the objective of demonstrating and applying the skills and techniques learned up to that point.
