@@ -4,7 +4,7 @@ export default function Media({ post }) {
     if (post?.post_hint === 'image') {
         return (
             <div className='media'>
-                <img src={post.url} onClick={handleClick}/>
+                <img src={post.url} alt={post.id} onClick={handleClick}/>
             </div>
         );
     }

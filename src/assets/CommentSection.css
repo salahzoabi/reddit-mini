@@ -1,14 +1,9 @@
 .comment {
-    padding-bottom: 1em;
     padding-inline: 1em;
 
-    border: thin solid var(--border-clr-100);
+    border-top: thin solid var(--border-clr-100);
+    border-bottom: thin solid var(--border-clr-100);
     background-color: var(--main-clr-200);
-}
-
-.comment:focus, .comment:hover {
-    border: thin solid var(--border-clr-300);
-    z-index: 1;
 }
 
 .comment .author {
@@ -16,8 +11,30 @@
 }
 
 .comment .body {
-    margin: 0;
+    margin: 0 0 1em;
     word-wrap: break-word;
+}
+
+.post-stats {
+    display: grid;
+    place-items: start;
+    margin-bottom: 1em;
+
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reply-count, .ups-count {
+    display: grid;
+    place-items: center;
+}
+
+.replies {
+    display: none;
+}
+
+.comment.expanded > .replies {
+    display: unset;
 }
 
 @media only screen and (width > 800px){
