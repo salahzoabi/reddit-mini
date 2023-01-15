@@ -4,6 +4,7 @@ import { useQuery } from 'react-query'
 import { useParams } from 'react-router-dom'
 import Post from '../../components/Post/Post'
 import CommentSection from '../../components/CommentSection/CommentSection'
+import BounceLoader from 'react-spinners/BounceLoader'
 
 export default function Comments() {
   const { permalink } = useParams()
@@ -12,7 +13,11 @@ export default function Comments() {
     return axios.get(`https://www.reddit.com/${permalink}.json`).then(res => res.data)
   })
 
-  if (isLoading) return 'Loading...'
+  if (isLoading) return (
+    <div className="spinner">
+      <BounceLoader loading={true} size={150} color={getComputedStyle(document.documentElement).getPropertyValue('--secondary-clr')} />
+    </div>
+  )
 
   if (error) return 'An error has occurred: ' + error.message
 
@@ -21,8 +26,5 @@ export default function Comments() {
       <Post data={data[0].data.children[0].data}></Post>
       <CommentSection data={data[1].data.children}></CommentSection>
     </>
-    // Post.js
-    // CommentSection.js
-
   )
 }

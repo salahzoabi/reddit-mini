@@ -1,6 +1,9 @@
 :root {
   --main-clr-100: #030303;
   --main-clr-200: #1A1A1B;
+  --main-clr-700: #aeaeb8;
+
+  --secondary-clr: #7a7ab6;
 
   --text-clr-weak: #82959b;
   --text-clr-strong: #f2f4f5;
@@ -33,4 +36,10 @@ a {
 a:visited,
 a:active {
 	color: var(--text-clr-weak);
+}
+
+.spinner {
+  height: 90vh;
+  display: grid;
+  place-items: center;
 }
